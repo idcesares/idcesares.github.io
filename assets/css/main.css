@@ -1,0 +1,88 @@
+/* Global Variables*/
+
+.hero-home {
+  transition-timing-function: ease;
+  transition: all 1s;
+  background-size: 400% 400%;
+  background-image: linear-gradient(89deg, #08AEEA 0%, #2AF598 100%);
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.fbBg {
+  background: #3b5998 !important;
+}
+
+.twBg {
+  background: #1da1f2 !important;
+}
+
+.lkBg {
+  background: #0077b5 !important;
+}
+
+.gtBg {
+  background: #333 !important;
+}
+
+.wpBg {
+  background: #25D366 !important;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.title--bold {
+  font-weight: bold;
+}
+
+.nav--centered {
+  margin: 0 auto;
+}
+
+.image--centered {
+  margin: 0 auto;
+}
+
+h2 {
+  font: bold 300% Consolas, Monaco, monospace;
+  width: 16.5em;
+  width: 21ch;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(21, end)
+}
+
+
+/* ==========  Animations  ========== */
+
+.animated--1 {
+  animation-delay: 0.5s;
+}
+
+.animated--2 {
+  animation-delay: 2s;
+}
+
+.animated--3 {
+  animation-delay: 1.5s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
