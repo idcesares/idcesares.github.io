@@ -1,14 +1,4 @@
-let app = new Vue({
-  el:'#main-content',
-  data: {
-    dataColor:""
-  },
-  methods: {
-            mouseLeave: function(value) {
-              document.querySelector("#main-content").classList.remove(value);
-            },
-            mouseEnter: function(value) {
-              document.querySelector("#main-content").classList.add(value);
-            }
-  }
-})
+function chBg(param){
+  let bgColor = document.querySelector("#main-content");
+  bgColor.classList.add(param);
+}
