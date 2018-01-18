@@ -4,11 +4,10 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://idcesares.com.br/</loc>
-  <lastmod>2017-07-26T14:37:30+00:00</lastmod>
+  <loc>http://idcesares.github.io/</loc>
+  <lastmod>2018-01-18T12:37:30+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 </urlset>
