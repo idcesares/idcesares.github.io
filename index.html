@@ -32,7 +32,8 @@
   </script>
 </head>
 
-<body class="animated zoomIn">
+<body class="animated animated--0 zoomIn">
+  <script src="https://unpkg.com/vue@2.4.2/dist/vue.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <link href="assets/css/main.min.css" rel="stylesheet" media="all">
@@ -53,7 +54,6 @@
         <h1 class="title is-size-1 title--bold animated animated--1 fadeInUp">ISAAC D'CÉSARES</h1>
         <h2 class="subtitle is-size-4 animated animated--2">Desenvolvimento Web</h2>
         <div class="navbar animated animated--3 bounceIn">
-          <div class="container">
             <a class="nav-item nav--centered" @mouseenter="mouseEnter('fbBg')" @mouseleave="mouseLeave('fbBg')" href="https://facebook.com/idcesares" target="_blank">
               <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
             </a>
@@ -69,12 +69,10 @@
             <a class="navbar-item nav--centered" @mouseenter="mouseEnter('wpBg')" @mouseleave="mouseLeave('wpBg')" href="https://api.whatsapp.com/send?phone=5521983291513" target="_blank">
               <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
             </a>
-          </div>
         </div>
       </div>
     </div>
   </section>
-  <script src="https://unpkg.com/vue@2.4.2/dist/vue.min.js"></script>
   <script src="https://use.fontawesome.com/4c7c070a3e.js"></script>
   <script src="assets/js/main.min.js" charset="utf-8"></script>
 </body>

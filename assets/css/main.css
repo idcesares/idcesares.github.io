@@ -59,6 +59,9 @@ h2 {
 
 
 /* ==========  Animations  ========== */
+.animated--0 {
+  animation-delay: 0.2s;
+}
 
 .animated--1 {
   animation-delay: 0.5s;
