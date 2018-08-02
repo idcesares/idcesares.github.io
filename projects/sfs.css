@@ -100,6 +100,9 @@ body {
 	object-fit: cover;
 }
 #navbarNav ul li p a{text-decoration:none; color:inherit;}
+.navbar-brand{
+	overflow:hidden;
+}
 @keyframes fadeinactivity {
     from { opacity: 0; }
     to   { opacity: 1; }
