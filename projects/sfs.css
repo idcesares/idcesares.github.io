@@ -92,8 +92,8 @@ body {
 	object-fit: cover;
 }
 .card-body > card-text{
-	max-height: 3em;
-    	overflow: hidden;
+	max-height: 3em !important;
+    	overflow: hidden !important;
 }
 .img-fluid{
 	max-height: 200px;
