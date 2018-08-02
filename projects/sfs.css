@@ -1,0 +1,101 @@
+body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-family: sans-serif;
+	animation: fadeIn 1s ease-in-out;
+    }
+:root{
+    --main-bg-color:#D3D3D3;
+    --main-button-color: #01AED9 !important;
+    --primary-color: #01AED9 !important;
+    --secondary-color: #98C449;
+    --box-shadow-color: rgba(0, 0, 0, 0.30);
+}
+.align-center{
+    margin: 0 auto;
+}
+.margin-top{
+    margin-top: 10px;
+}
+.background{
+    background-color: var(--main-bg-color);
+}
+.container-home{
+    width: 100%;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.logo-login {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+}
+
+.login--container {
+        width: 100%;
+    }
+
+.login {
+        width: 300px;
+        padding: 15px;
+        margin: 10px auto;
+        background-color: #fff;
+        border-radius: 5%;
+        box-shadow: 1px 1px 5px var(--box-shadow-color);
+    }
+#btnAlterarSenha {
+        cursor: pointer;
+        background-color: transparent;
+        padding: 5px 0;
+	border: 0;
+    }
+.btn-login {
+        background-color: var(--primary-color);
+        display: block;
+        margin: 0 auto;
+        font-weight: 600;
+        border: 0;
+    }
+.btn-login:hover {
+            background-color: var(--secondary-color);
+        }
+.card{
+    border: 0;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    transition: box-shadow ease-in-out 0.1s;
+}
+.card:hover{
+    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+}
+
+.fadein-activity{
+    animation: fadeinactivity 1s;
+}
+.top-bar{
+	display:none;
+}
+.btn a{
+	text-decoration:none;
+	color: white;
+	font-weight: bold;
+}
+.btn a:hover{
+	text-decoration:none;
+	color: white;
+	font-weight: bold;
+}
+.card-img-top{
+	max-height: 200px;
+	object-fit: cover;
+}
+.img-fluid{
+	max-height: 200px;
+	object-fit: cover;
+}	
+@keyframes fadeinactivity {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
