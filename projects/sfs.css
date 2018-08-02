@@ -91,7 +91,7 @@ body {
 	max-height: 200px;
 	object-fit: cover;
 }
-.card-body > card-text{
+.card-body > .card-text{
 	max-height: 3em !important;
     	overflow: hidden !important;
 }
