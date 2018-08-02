@@ -94,7 +94,8 @@ body {
 .img-fluid{
 	max-height: 200px;
 	object-fit: cover;
-}	
+}
+#navbarNav ul li p a{text-decoration:none; color:inherit;}
 @keyframes fadeinactivity {
     from { opacity: 0; }
     to   { opacity: 1; }
