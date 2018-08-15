@@ -64,11 +64,11 @@ body {
         }
 .card{
     border: 0;
-    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    box-shadow: 0 2px 70px 0 rgba(110,130,208,0.18);
     transition: box-shadow ease-in-out 0.1s;
 }
 .card:hover{
-    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+    box-shadow: 0 4px 8px 0 rgba(110,130,208,0.18);
 }
 
 .fadein-activity{
@@ -86,6 +86,14 @@ body {
 	text-decoration:none;
 	color: white;
 	font-weight: bold;
+}
+.btn-info{
+	background-color: rgba(23,162,184,1);
+	font-weight: bold;
+	transition: background-color ease-in-out 0.1s;
+}
+.btn-info:hover{
+	background-color: rgba(1,174,217,1);
 }
 .card-img-top{
 	max-height: 200px;
