@@ -88,6 +88,7 @@ body {
 	font-weight: bold;
 }
 .btn-info{
+	border:0;
 	background-color: rgba(23,162,184,1);
 	font-weight: bold;
 	transition: background-color ease-in-out 0.1s;
@@ -106,6 +107,9 @@ body {
 .img-fluid{
 	max-height: 200px;
 	object-fit: cover;
+}
+.modal-content{
+	border:0;
 }
 #navbarNav ul li p a{text-decoration:none; color:inherit;}
 .navbar-brand{
