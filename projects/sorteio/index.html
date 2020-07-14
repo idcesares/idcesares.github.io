@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- 
+   _____            _       _         ______ _      _        //\        _           
+  / ____|          | |     (_)       |  ____| |    | |      |/ \|      (_)          
+ | (___   ___  _ __| |_ ___ _  ___   | |__  | | ___| |_ _ __ ___  _ __  _  ___ ___  
+  \___ \ / _ \| '__| __/ _ \ |/ _ \  |  __| | |/ _ \ __| '__/ _ \| '_ \| |/ __/ _ \ 
+  ____) | (_) | |  | ||  __/ | (_) | | |____| |  __/ |_| | | (_) | | | | | (_| (_) |
+ |_____/ \___/|_|   \__\___|_|\___/  |______|_|\___|\__|_|  \___/|_| |_|_|\___\___/ 
+                                                                                                                                                            
+BASEADO NO SISTEMA DISPONIBILIZADO PELO INSTITUTO FEDERAL DE SANTA CATARINA - DEPARTAMENTO DE INGRESSO
+Link para mais informações: https://www.ifsc.edu.br/sorteio-publico
+Autores: Antonielly Garcia Rodrigues, Alex Helder Cordeiro de Oliveira
+Biblioteca utilizada para semente de randomicidade</b>: https://github.com/davidbau/seedrandom | Copyright 2019 David Bau.
+20/01/2011
+
+Como fazer a auditoria do sorteio?
+- Copie a semente utilizada para o sorteio e que foi disponibilizada na geração da lista;
+- Acesse o sistema de sorteio;
+- Preencha as informações de Nome do sorteio, Total de Inscritos e Vagas exatamente como o que foi publicado na listagem oficial disponibilizada;
+- Clique na opção Inserir semente manualmente;
+- Cole a semente que foi copiada anteriormente;
+- Clique em Gerar Lista;
+- Verifique os resultados obtidos com os resultados disponibilizados.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio Eletrônico - Escola Sesc de Ensino Médio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <form name="sorteio">
+            <img src="escolasesc_logo.png" alt="Logo da Escola Sesc de Ensino Médio" class="img" width="300px">
+            <h1 class="text-center">Sistema de sorteio eletrônico</h1>
+            <div class="form-group">
+                <label">Nome do sorteio *</label>
+                    <input type="text" class="form-control" name="nomeCurso" required>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label>Total de Inscritos *</label>
+                    <input type="number" class="form-control" name="totalInscritos" required>
+                </div>
+                <div class="col">
+                    <label>Vagas *</label>
+                    <input type="number" class="form-control" name="vagas" required>
+                </div>
+            </div>
+            <div class="form-group mt-2 mb-2">
+                <div class="col">
+                    <input type="checkbox" class="form-check-input" name="sementeManual">
+                    <label class="form-check-label">Inserir semente manualmente <i>(Utilizado para auditoria)</i>
+                    </label>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label>Semente</label>
+                    <input type="text" name="semente" class="form-control" disabled>
+                </div>
+            </div>
+            <p><i>* Campos obrigatórios</i></p>
+            <input id="button" class="btn btn-primary" type="button" value="Gerar Lista">
+        </form>
+        <div id="resultado" class="mt-3">
+        </div>
+        <div id="informacao" class="mt-3">
+        </div>
+    </div>
+</body>
+
+</html>
