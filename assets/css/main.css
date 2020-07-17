@@ -53,7 +53,7 @@ html{
 h2 {
   font: bold 300% Consolas, Monaco, monospace;
   width: 16.5em;
-  width: 21ch;
+  width:24ch;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
@@ -71,7 +71,7 @@ h2 {
 }
 
 .animated--2 {
-  animation-delay: 2s;
+  animation-delay: 0.7s;
 }
 
 .animated--3 {

@@ -1,44 +1,44 @@
-/* Habilitar e desabilitar o input semente. */
+// Habilitar e desabilitar o input semente.
 campoSemente = document.sorteio.semente;
 checkSemente = document.sorteio.sementeManual;
 checkSemente.onclick = function () {
 	campoSemente.disabled = !checkSemente.checked;
 }
 
-/* Evento de execução do sorteio ao clicar no botão "Gerar Lista". */
+// Evento de execução do sorteio ao clicar no botão "Gerar Lista".
 botao = document.sorteio.button;
 botao.onclick = testaRegras;
 
-/* Função que checa se os campos obrigatórios estão preenchidos e regras de validação foram obedecidas. */
+// Função que checa se os campos obrigatórios estão preenchidos e regras de validação foram obedecidas.
 function testaRegras() {
 	let nomeCurso = document.sorteio.nomeCurso.value;
 	let inscritos = parseInt(document.sorteio.totalInscritos.value);
 	let vagas = parseInt(document.sorteio.vagas.value);
-	if (nomeCurso == "" || inscritos == "" || vagas == "") {
+	if (nomeCurso == "" || inscritos == "" || vagas == "") { // Testa se todos os campos foram preenchidos
 		alert("Preencha todos os campos indicados!");
-	} else if (inscritos <= "0" || vagas <= "0") {
+	} else if (inscritos <= "0" || vagas <= "0") { // Testa se o número de vagas e de inscritos é menor ou igual a zero
 		alert("A quantidade de inscritos e de vagas disponíveis não pode ser menor ou igual a 0.");
-	} else if (inscritos < vagas) {
+	} else if (inscritos < vagas) { // Testa se o Número de inscritos é menor que o número de vagas
 		alert("A quantidade de inscritos não pode ser menor que a quantidade de vagas disponíveis.");
-	} else gereEImprimaResultado(nomeCurso, inscritos, vagas); /* Se estuver tudo certo com os dados de entrada, chama a função principal. */
+	} else gereEImprimaResultado(nomeCurso, inscritos, vagas); // Se estuver tudo certo com os dados de entrada, chama a função principal.
 }
 
-/* Função principal do sistema. */
+// Função principal do sistema. Chama as outras funções.
 function gereEImprimaResultado(nomeCurso, inscritos, vagas) {
-	let semente; /* Instanciando a variável semente. */
+	let semente; // Instanciando a variável semente.
 	if (document.sorteio.sementeManual.checked) {
-		semente = parseInt(document.sorteio.semente.value); /* Semente indicada pelo usuário. Para fins de auditoria. */
+		semente = parseInt(document.sorteio.semente.value); // Semente indicada pelo usuário. Para fins de auditoria.
 	} else {
-		semente = new Date().getTime(); /* Gera uma semente aleatória que é Um número representando os milissegundos passados entre 1 de Janeiro de 1970 00:00:00 UTC e a data atual. */
+		semente = new Date().getTime(); // Gera uma semente aleatória que é Um número representando os milissegundos passados entre 1 de Janeiro de 1970 00:00:00 UTC e a data atual.
 	}
-	let embaralhada = gereListaEmbaralhada(inscritos, semente);
-	let pontoImpressao = document.getElementById('resultado'); /* Onde irá imprimir o resultado */
-	let pontoInformacao = document.getElementById('informacao'); /* Onde irá imprimir as informações do sistema */
+	let embaralhada = gereListaEmbaralhada(inscritos, semente); // Atribui a lista embaralhada a uma variável
+	let pontoImpressao = document.getElementById('resultado'); // Onde irá imprimir o resultado
+	let pontoInformacao = document.getElementById('informacao'); // Onde irá imprimir as informações do sistema
 	imprimaResultado(nomeCurso, semente, embaralhada, vagas, pontoImpressao);
 	gereVisualDeInformacoesTecnicas(semente, pontoInformacao);
 }
 
-/* Função que embaralha os inscritos com base na semente utilizada, seja a aleatória ou a inserida manualmente. Utiliza uma abordagem do algoritmo de embaralhamento Fisher–Yates. */
+// Função que embaralha os inscritos com base na semente utilizada, seja a aleatória ou a inserida manualmente. Utiliza uma abordagem do algoritmo de embaralhamento Fisher–Yates.
 function gereListaEmbaralhada(inscritos, semente) {
 	Math.seedrandom(semente);
 	let consumida = new Array(inscritos); // Cria array vazio com a quantidade especificada de inscritos.
@@ -57,7 +57,7 @@ function gereListaEmbaralhada(inscritos, semente) {
 	}
 	return resultado;
 }
-/* Conjunto de funções que exibem os resultados do sorteio e as informações técnicas do sistema no arquivo index.html */
+// Conjunto de funções que exibem os resultados do sorteio e as informações técnicas do sistema no arquivo index.html.
 function imprimaResultado(nomeCurso, semente, embaralhada, vagas, pontoImpressao) {
 	let resultadoSorteio = "";
 	resultadoSorteio += gereVisualDeCabecalhoDaLista(nomeCurso, semente);
