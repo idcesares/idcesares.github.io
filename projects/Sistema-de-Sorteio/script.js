@@ -73,6 +73,7 @@ function gereVisualDeCabecalhoDaLista(nomeCurso, semente) {
 	</div>
 	<div class="alert alert-info" role="alert">
 		<strong>Semente utilizada no sorteio: </strong>${semente}<br/>
+		<p>A semente aleatória gerada é um número representando os milissegundos passados entre 1 de Janeiro de 1970 00:00:00 UTC e a data atual.</p>
 	</div>
     <h1 class="text-center">Lista <b>OFICIAL</b> do sorteio: ${nomeCurso}</h1>
     `
@@ -132,6 +133,7 @@ function gereVisualDeInformacoesTecnicas(semente, pontoInformacao) {
 	<b>VERSÃO BASEADA NO SOFTWARE DISPONIBILIZADO PELO INSTITUTO FEDERAL DE SANTA CATARINA (IFSC)</b> <br/>
 	<b>Copyright IFSC https://www.ifsc.edu.br/sorteio-publico</b><br/>
 	<b>Autores:</b> Antonielly Garcia Rodrigues, Alex Helder Cordeiro de Oliveira
+	<b>Nova versão:</b> Isaac D'Césares | 07/2020
 	`
 	pontoInformacao.innerHTML = conteudoInformacaoesTecnicas;
 }

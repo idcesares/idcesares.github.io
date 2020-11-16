@@ -1,6 +1,7 @@
 # 🎲 **Sistema de Sorteio Eletrônico**
 
-**BASEADO NO SISTEMA DISPONIBILIZADO PELO INSTITUTO FEDERAL DE SANTA CATARINA - DEPARTAMENTO DE INGRESSO** Link para mais informações: [https://www.ifsc.edu.br/sorteio-publico](https://www.ifsc.edu.br/sorteio-publico)
+**BASEADO NO SISTEMA DISPONIBILIZADO PELO INSTITUTO FEDERAL DE SANTA CATARINA - DEPARTAMENTO DE INGRESSO** 
+Link para mais informações: [https://www.ifsc.edu.br/sorteio-publico](https://www.ifsc.edu.br/sorteio-publico)
 
 **Autores:** Antonielly Garcia Rodrigues, Alex Helder Cordeiro de Oliveira | 01/2011
 
