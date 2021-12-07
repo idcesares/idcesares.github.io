@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sorteio Amigo Oculto</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div id="player">
+			<audio controls autoplay hidden loop>
+			 <source src="file.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="zoom">
+					<p data-auto-animate>😀<strong>Olá! Seja bem-vind@ ao sorteio do amigo oculto da Família Oliveira Silva!</strong></p>
+					<img data-src="https://media.giphy.com/media/kKo2x2QSWMNfW/giphy.gif" data-preload>
+				</section>
+				<section data-transition="zoom">Você recebeu um link <strong>único, pessoal e intransferível</strong>. Aqui você saberá quem você tirou em nosso sorteio gerado automaticamente.</section>
+				<section data-transition="zoom">
+					<h2>Que rufem os tambores: </h2>
+					<img data-src="https://media.giphy.com/media/3q1yvRyvZaDF8waQ8I/giphy.gif" data-preload>
+				</section>
+				<section data-transition="zoom">
+					<h2>Você tirou: </h2>
+					<h3 id="friend" style="color:dodgerblue"></h3>
+					<p>Guarde bem esse nome e escolha um presente bem lindo 🎁! Se estiver em dúvidas do que comprar, veja as sugestões no grupo do Whatsapp!</p>
+				</section>
+			</div>
+		</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				autoSlide: 5000,
+				loop: true,
+				width: 400,
+  				height: 800,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
